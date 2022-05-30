@@ -1,0 +1,219 @@
+:root {
+    --DarkBackground: #1f2937;
+    --TopMainText: #F9FAF8;
+    --TopSecondaryText: #b5b6b9;
+    --HeaderLogoText: #F9FAF8;
+    --ButtonColor: #3882F6;
+    --InformationHeaderText: #1F2937;
+    --QuoteBackground: #E5E7EB;
+    --QuoteText: #1F2937;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    font-family: Roboto, sans-serif;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+.Top-Section {
+    background-color: var(--DarkBackground);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 18%;
+    padding-top: 10px;
+    padding-bottom: 7%;
+
+}
+
+.Top-Section .Header {
+    display: flex;
+    align-items: center;
+}
+
+#Header-Logo {
+    color: var(--HeaderLogoText);
+    flex: 1;
+    font-size: 24px;
+}
+
+.Header-Links {
+    color: var(--TopSecondaryText);
+    font-size: 14px; 
+    display: flex;
+    gap: 20px;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+.Website-Info {
+    display: flex;
+    gap: 5%;
+    margin-top: 10%;
+
+}
+
+.Website-Info .Left-Side {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.Website-Info .Left-Side .Header {
+    color: var(--TopMainText);
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.Website-Info .Left-Side .Subtext {
+    color: var(--TopSecondaryText);
+    font-size: 18px;
+}
+
+.Left-Side button {
+    background-color: var(--ButtonColor);
+    border-radius: 5px;
+    width: 120px;
+    color: var(--HeaderLogoText);
+    font-weight: 900;
+    font-size: 16px;
+    padding: 5px;
+    border-style: none;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #2f6fd7;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+
+.Info-Section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Info-Section .Header {
+    color: var(--InformationHeaderText);
+    font-size: 36px;
+    font-weight: bolder;
+    padding: 3%;
+}
+
+.Images {
+    display: flex;
+    gap: 50px;
+    padding-left: 25%; padding-right: 25%;
+    text-align: center;
+    padding-bottom: 8%;
+    color: rgb(65, 65, 65);
+    opacity: .80;
+
+}
+
+.Images img {
+    border-radius: 10px;
+    border: solid var(--ButtonColor) 1.5px;
+    width: 190px;
+    height: 190px;
+}
+
+.Images .Subtext {
+    padding: 4px;
+    padding-top: 0px;
+}
+
+.Quote-Section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--QuoteBackground);
+    padding: 8%;
+    padding-left: 20%; padding-right: 20%;
+}
+
+.Quote {
+    color: var(--QuoteText);
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.Author {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--InformationHeaderText);
+    text-align: right;
+}
+
+.Bottom-Section {
+    flex: 1;
+}
+
+.Sign-Up-Section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Blue-Box {
+    display: flex;
+    background-color: var(--ButtonColor);
+    color: var(--TopMainText);
+    margin: 5%;
+    padding: 2.5%;
+    padding-left: 7%; 
+    padding-right: 7%;
+    border-radius: 6px;
+    gap: 15%;
+    white-space: nowrap;
+}
+
+.Blue-Box .Text {
+    font-size: 22px;
+    font-weight: bold;
+    flex-grow: 1;
+}
+
+.Blue-Box .Subtext {
+    color: var(--TopSecondaryText);
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.Blue-Box button {
+    background-color: var(--ButtonColor);
+    border-radius: 5px;
+    border: var(--HeaderLogoText) solid 2px;
+    width: 120px;
+    color: var(--HeaderLogoText);
+    font-size: 18px;
+    border: white solid 2px;
+    padding-left: 20px; padding-right: 20px;
+    margin-right: 70px;
+}
+
+.Footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--DarkBackground);
+    color: var(--TopSecondaryText);
+    font-size: 16px;
+    padding: 2%;
+}
